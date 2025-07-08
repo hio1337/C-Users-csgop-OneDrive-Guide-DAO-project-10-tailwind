@@ -23,9 +23,9 @@ export default function AddItem(props) {
           className="textfield text-1xl font-bold text-pink-400 mx-1 mt-2 border-2 border-pink-500 focus:border-pink-700 focus:outline-none rounded-lg"
         />
       </div>
-      <div className="mt-5 form-footer flex flex-col items-center border-2 border-pink-500 focus:border-pink-700 focus:outline-none hover:bg-pink-200 p-1.5 rounded-lg transition-colors duration-400">
+      <div className="mt-5 form-footer flex flex-col items-center border-2  bg-pink-500 border-pink-500 focus:border-pink-700 focus:outline-none hover:bg-purple-100 p-1.5 rounded-lg transition-colors duration-400">
         <div className="validation text-1xl font-bold text-pink-900">{props.valid}</div>
-        <input type="submit" className="btn btn-basic text-3xl font-bold text-pink-500" value="Добавить" />
+        <input type="submit" className="btn btn-basic text-3xl font-bold text-white transition-colors duration-400 hover:text-pink-500" value="Добавить" />
       </div>
     </form>
   );
