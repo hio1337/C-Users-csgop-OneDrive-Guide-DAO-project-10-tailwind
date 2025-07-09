@@ -27,14 +27,14 @@ export default function Item(props) {
       </div>
       <div className="item-quantity flex items-center space-x-4 mt-2">
         <button
-          className="item-less bg-pink-500 text-white px-2 py-1 rounded disabled:bg-gray-300  hover:bg-pink-600 transition-colors duration-300"
+          className="item-less bg-pink-500 font-bold text-white px-3 py-1 rounded-lg border-2 disabled:bg-gray-300  hover:text-pink-500 hover:bg-purple-100 p-1.5 transition-colors duration-400"
           disabled={total === 0}
           onClick={handleRemoveClick}
         >
           -
         </button>
         <h3 className="item-total text-pink-500 font-bold text-xl">{total ? total : ""}</h3>
-        <button className="item-more bg-pink-500 text-white px-2 py-1 rounded  hover:bg-pink-600 transition-colors duration-300" onClick={handleAddClick}>
+        <button className="item-more bg-pink-500 font-bold text-white px-2.5 py-1 rounded-lg border-2 disabled:bg-gray-300  hover:text-pink-500 hover:bg-purple-100 p-1.5 transition-colors duration-400" onClick={handleAddClick}>
           +
         </button>
       </div>
@@ -42,4 +42,3 @@ export default function Item(props) {
   );
 }  
 // File: my-project/src/item.js
-
