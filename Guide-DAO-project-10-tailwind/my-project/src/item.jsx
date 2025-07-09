@@ -27,7 +27,7 @@ export default function Item(props) {
       </div>
       <div className="item-quantity flex items-center space-x-4 mt-2">
         <button
-          className="item-less bg-pink-500 font-bold text-white px-3 py-1 rounded-lg border-2 disabled:bg-gray-300  hover:text-pink-500 hover:bg-purple-100 p-1.5 transition-colors duration-400"
+          className="item-less bg-pink-500 font-bold text-white px-3 py-1 rounded-lg border-2 disabled:bg-gray-300 disabled:border-0 disabled:text-white hover:text-pink-500 hover:bg-purple-100 p-1.5 transition-colors duration-400"
           disabled={total === 0}
           onClick={handleRemoveClick}
         >
@@ -42,3 +42,4 @@ export default function Item(props) {
   );
 }  
 // File: my-project/src/item.js
+
